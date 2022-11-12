@@ -1,0 +1,9 @@
+.subfooter {
+  background-color: #a02279;
+  padding-top: 0.8rem;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem;
+  justify-content: space-around;
+  box-sizing: border-box;
+}

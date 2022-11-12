@@ -1,0 +1,34 @@
+.border {
+  border: 1px solid red;
+}
+.nft_container {
+  margin: 1rem 0;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+}
+.container {
+  margin: 0 4rem;
+  /* border: 1px solid red; */
+  display: grid;
+  justify-content: space-around;
+}
+.desktop {
+  grid-template-columns: 16rem 16rem 16rem 16rem;
+}
+.nft_container > img {
+  width: 100%;
+}
+.details_container {
+  /* border: 1px solid red; */
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  font-size: 0.6rem;
+}
+.details_container > div {
+  margin: 0.3rem 0;
+}
+.float {
+  text-align: right;
+}

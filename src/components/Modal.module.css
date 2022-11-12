@@ -1,0 +1,8 @@
+.container {
+  position: fixed;
+  top: 0rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* backdrop-filter: rgba(255, 255, 255, 0.4); */
+  height: 100%;
+  width: 100%;
+}
