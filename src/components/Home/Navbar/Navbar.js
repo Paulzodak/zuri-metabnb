@@ -7,15 +7,19 @@ const Navbar = ({ setShowModal }) => {
   const navItems = [
     {
       header: "Home",
+      to: "n",
     },
     {
       header: "Place to stay",
+      link: "/placetostay",
     },
     {
       header: "NFTs",
+      to: "b",
     },
     {
       header: "Community",
+      to: "n",
     },
   ];
   return (

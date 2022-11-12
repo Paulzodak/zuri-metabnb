@@ -1,7 +1,11 @@
 import React from "react";
 
 const NavItems = ({ items }) => {
-  return <div>{items.header}</div>;
+  if (items.to) {
+    return <div>{items.header}</div>;
+  } else if (items.link) {
+    return <a href={items.link}>{items.header}</a>;
+  }
 };
 
 export default NavItems;
