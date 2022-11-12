@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./NFT.module.css";
-import stars from "../../images/page 1/stars.svg";
+import stars from "../../../images/page 1/stars.svg";
 
 const NftPrototype = ({ item }) => {
   return (

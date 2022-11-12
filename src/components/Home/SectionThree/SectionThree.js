@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./SectionThree.module.css";
-import nft1 from "../../images/page 1/image 13.svg";
-import nft2 from "../../images/page 1/image 14.svg";
-import nft3 from "../../images/page 1/image 15.svg";
+import nft1 from "../../../images/page 1/image 13.svg";
+import nft2 from "../../../images/page 1/image 14.svg";
+import nft3 from "../../../images/page 1/image 15.svg";
 
 const SectionThree = () => {
   return (

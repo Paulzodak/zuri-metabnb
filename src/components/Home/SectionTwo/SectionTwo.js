@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./SectionTwo.module.css";
 import NftList from "../NFTs/NftList";
-import Nft1 from "../../images/page 1/image 5.svg";
-import Nft2 from "../../images/page 1/image 6.svg";
-import Nft3 from "../../images/page 1/image 7.svg";
-import Nft4 from "../../images/page 1/image 8.svg";
-import Nft5 from "../../images/page 1/image 9.svg";
-import Nft6 from "../../images/page 1/image 10.svg";
-import Nft7 from "../../images/page 1/image 11.svg";
-import Nft8 from "../../images/page 1/image 12.svg";
+import Nft1 from "../../../images/page 1/image 5.svg";
+import Nft2 from "../../../images/page 1/image 6.svg";
+import Nft3 from "../../../images/page 1/image 7.svg";
+import Nft4 from "../../../images/page 1/image 8.svg";
+import Nft5 from "../../../images/page 1/image 9.svg";
+import Nft6 from "../../../images/page 1/image 10.svg";
+import Nft7 from "../../../images/page 1/image 11.svg";
+import Nft8 from "../../../images/page 1/image 12.svg";
 const SectionTwo = () => {
   const NFTs = [
     {

@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./SectionOne.module.css";
-import nft1 from "../../images/page 1/image 1.svg";
-import nft2 from "../../images/page 1/image 2.svg";
-import nft3 from "../../images/page 1/image 3.svg";
-import nft4 from "../../images/page 1/image 4.svg";
+import nft1 from "../../../images/page 1/image 1.svg";
+import nft2 from "../../../images/page 1/image 2.svg";
+import nft3 from "../../../images/page 1/image 3.svg";
+import nft4 from "../../../images/page 1/image 4.svg";
 
 const SectionOne = () => {
   const mobile = false;

@@ -1,6 +1,6 @@
 import React from "react";
-import Metabnb from "../../images/page 1/Metabnb.svg";
-import Metalogo from "../../images/page 1/Metalogo.svg";
+import Metabnb from "../../../images/page 1/Metabnb.svg";
+import Metalogo from "../../../images/page 1/Metalogo.svg";
 import classes from "./Navbar.module.css";
 import NavItems from "./NavItems";
 const Navbar = ({ setShowModal }) => {
