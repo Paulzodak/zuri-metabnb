@@ -6,15 +6,15 @@ import SectionTwo from "../../components/SectionTwo/SectionTwo";
 import SectionThree from "../../components/SectionThree/SectionThree";
 import Modal from "../../components/Modal";
 const Index = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <Navbar />
+      <Navbar setShowModal={setShowModal} />
       <SectionOne />
       <Subfooter />
       <SectionTwo />
       <SectionThree />
-      <>{showModal ? <Modal /> : null}</>
+      <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</>
     </>
   );
 };

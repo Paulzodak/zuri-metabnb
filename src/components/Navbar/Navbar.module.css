@@ -32,3 +32,6 @@
   border-radius: 0.7rem;
   border: none;
 }
+.connectWallet:hover {
+  background-color: #821b62;
+}

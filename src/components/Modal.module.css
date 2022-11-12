@@ -6,3 +6,37 @@
   height: 100%;
   width: 100%;
 }
+.modal_content_container {
+  position: relative;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 10rem auto;
+  padding: 0.5rem 0;
+  height: 15rem;
+  width: 30rem;
+}
+.modal_content_container > h1,
+p {
+  margin: 1rem 1.5rem;
+}
+
+.modal_content_container > img {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+.modal_content_container > img:hover {
+  transition: 300ms;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.modal_content_container > h1 {
+  margin: 1rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.modal_content_container > hr {
+  border: 1px solid #cfd8dc;
+}

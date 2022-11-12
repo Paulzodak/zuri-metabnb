@@ -3,7 +3,7 @@ import Metabnb from "../../images/page 1/Metabnb.svg";
 import Metalogo from "../../images/page 1/Metalogo.svg";
 import classes from "./Navbar.module.css";
 import NavItems from "./NavItems";
-const Navbar = () => {
+const Navbar = ({ setShowModal }) => {
   const navItems = [
     {
       header: "Home",
@@ -30,7 +30,14 @@ const Navbar = () => {
         })}
       </div>
       <div className={classes.bordeer}>
-        <button className={`${classes.connectWallet}`}>Connect wallet</button>
+        <button
+          onClick={() => {
+            setShowModal(true);
+          }}
+          className={`${classes.connectWallet}`}
+        >
+          Connect wallet
+        </button>
       </div>
     </nav>
   );
