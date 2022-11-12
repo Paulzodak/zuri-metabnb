@@ -6,7 +6,7 @@ const List = ({ name, props }) => {
       <h1>{name}</h1>
 
       {props.map((item) => {
-        return <div>{item}</div>;
+        return <div key={item}>{item}</div>;
       })}
     </div>
   );

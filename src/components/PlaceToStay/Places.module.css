@@ -1,0 +1,14 @@
+.places {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 6rem 4rem;
+  position: relative;
+}
+.search {
+  border: 1px solid #b4b4b4;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  top: -0.8rem;
+}

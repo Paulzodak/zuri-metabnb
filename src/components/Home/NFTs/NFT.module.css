@@ -2,7 +2,7 @@
   border: 1px solid red;
 }
 .nft_container {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   border: 1px solid #d7d7d7;
   border-radius: 0.8rem;
   padding: 0.7rem;
@@ -10,6 +10,7 @@
 .container {
   margin: 0 4rem;
   /* border: 1px solid red; */
+  margin-bottom: 2rem;
   display: grid;
   justify-content: space-around;
 }

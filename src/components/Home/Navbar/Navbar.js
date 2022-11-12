@@ -19,12 +19,12 @@ const Navbar = ({ setShowModal }) => {
     },
   ];
   return (
-    <nav className={`${classes.Navbar} ${classes.bordeer}`}>
-      <div className={classes.bordeer}>
+    <nav className={`${classes.Navbar} ${classes.border}`}>
+      <div className={classes.border}>
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />
       </div>
-      <div className={`${classes.bordeer} ${classes.NavItems}`}>
+      <div className={`${classes.border} ${classes.NavItems}`}>
         {navItems.map((items) => {
           return <NavItems key={items.header} items={items} />;
         })}
