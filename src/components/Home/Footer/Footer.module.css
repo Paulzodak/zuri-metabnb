@@ -1,0 +1,20 @@
+.footer {
+  background-color: black;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 15rem 10rem 10rem 10rem;
+  justify-content: space-around;
+}
+.border {
+  border: 1px solid red;
+}
+.community {
+  color: white;
+  padding-top: 2rem;
+}
+.community > h1 {
+  font-size: 1.3rem;
+}
+.community > div {
+  margin-top: 1.3rem;
+}

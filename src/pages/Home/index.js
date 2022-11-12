@@ -5,6 +5,7 @@ import Subfooter from "../../components/Subfooter";
 import SectionTwo from "../../components/Home/SectionTwo/SectionTwo";
 import SectionThree from "../../components/Home/SectionThree/SectionThree";
 import Modal from "../../components/Modal";
+import Footer from "../../components/Home/Footer/Footer";
 const Index = () => {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <SectionTwo />
       <SectionThree />
       <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</>
+      <Footer />
     </>
   );
 };
