@@ -8,12 +8,12 @@ const NftPrototype = ({ item }) => {
     <div className={classes.nft_container}>
       <img src={item.image} alt="" />
       <div className={`${classes.details_container}`}>
-        <div className={classes.floatleft}>{item.name}</div>
-        <div className={classes.floatright}>
+        <div>{item.name}</div>
+        <div className={classes.float}>
           <b>{item.details}</b>
         </div>
-        <div className={classes.floatleft}>{item.distance}</div>
-        <div className={classes.floatright}>{item.available}</div>
+        <div>{item.distance}</div>
+        <div className={classes.float}>{item.available}</div>
         <img src={stars} alt="" />
       </div>
     </div>
