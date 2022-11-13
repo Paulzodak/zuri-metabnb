@@ -36,3 +36,7 @@
 .connectWallet:hover {
   background-color: #821b62;
 }
+.link {
+  text-decoration: none;
+  color: black;
+}

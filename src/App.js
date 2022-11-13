@@ -1,4 +1,5 @@
 import Index from "./pages/Home";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import PlaceToStay from "./pages/PlaceToStay/PlaceToStay";
 function App() {
