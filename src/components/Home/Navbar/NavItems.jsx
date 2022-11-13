@@ -10,6 +10,7 @@ const NavItems = ({ items }) => {
       </a>
     );
   }
+  return <div>{items.header}</div>;
 };
 
 export default NavItems;
