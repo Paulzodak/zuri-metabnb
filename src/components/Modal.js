@@ -1,13 +1,18 @@
 import React from "react";
 import classes from "./Modal.module.css";
 import closebtn from "../images/page 1/close.svg";
+import RightcaretLogo from "../images/LOGOS/RIghtcaretLogo";
+import MetamaskLogo from "../images/page 1/wolve.svg";
+import WalletconnectLogo from "../images/page 1/walletconnect.svg";
 const Modal = ({ setShowModal }) => {
   const wallet = [
     {
       name: " Metamask",
+      logo: MetamaskLogo,
     },
     {
       name: "WalletConnect",
+      logo: WalletconnectLogo,
     },
   ];
   return (
@@ -23,6 +28,19 @@ const Modal = ({ setShowModal }) => {
         />
         <hr />
         <p>Choose your preferred wallet:</p>
+        <div className={classes.wallet_container}>
+          {wallet.map((item) => {
+            return (
+              <>
+                <div className={classes.wallet}>
+                  <img className={classes.wallet_icon} src={item.logo} alt="" />
+                  <span className={classes.wallet_text}> {item.name}</span>
+                  <RightcaretLogo margin="1rem 1rem" float={"right"} />
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

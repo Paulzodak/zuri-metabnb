@@ -7,7 +7,7 @@ const Navbar = ({ setShowModal }) => {
   const navItems = [
     {
       header: "Home",
-      to: "n",
+      link: "/",
     },
     {
       header: "Place to stay",

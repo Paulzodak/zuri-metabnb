@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Places.module.css";
+import SettingsLogo from "../../images/LOGOS/SettingsLogo";
 const Places = () => {
   const places = [
     { name: "Restaurant" },
@@ -14,9 +15,14 @@ const Places = () => {
   return (
     <section className={classes.places}>
       {places.map((item) => {
-        return <div>{item.name}</div>;
+        return <div className={classes.placestostay}>{item.name}</div>;
       })}
-      <div className={classes.search}></div>
+      <div className={classes.search_container}>
+        <input placeholder="Location" className={classes.search}></input>
+        <div className={classes.settings}>
+          <SettingsLogo />
+        </div>
+      </div>
     </section>
   );
 };

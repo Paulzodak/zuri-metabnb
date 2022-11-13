@@ -18,3 +18,18 @@
 .community > div {
   margin-top: 1.3rem;
 }
+.social_icons {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.Metabnb {
+  padding-top: 2.5rem;
+}
+.social_icons {
+  margin-top: 6rem;
+}
+.copyright {
+  margin-top: 4rem;
+  color: white;
+}

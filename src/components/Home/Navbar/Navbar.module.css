@@ -36,3 +36,7 @@
 .connectWallet:hover {
   background-color: #821b62;
 }
+.placetostay {
+  text-decoration: none;
+  color: black;
+}

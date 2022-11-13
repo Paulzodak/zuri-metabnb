@@ -40,3 +40,28 @@ p {
 .modal_content_container > hr {
   border: 1px solid #cfd8dc;
 }
+.wallet_container {
+  /* border: 1px solid red; */
+  margin: 0rem 1.5rem;
+}
+.wallet {
+  border: 1px solid #cfd8dc;
+  height: 3rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.wallet:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+.wallet_icon {
+  height: 75%;
+  position: relative;
+  top: 0.4rem;
+  width: 5rem;
+}
+.wallet_text {
+  display: inline-block;
+  position: relative;
+  top: -0.4rem;
+}

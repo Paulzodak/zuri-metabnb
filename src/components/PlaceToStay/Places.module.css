@@ -7,8 +7,30 @@
 }
 .search {
   border: 1px solid #b4b4b4;
+  font-family: "Red Rose", cursive;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0rem 2rem 0rem 0.5rem;
   height: 2.5rem;
   border-radius: 0.5rem;
   position: relative;
   top: -0.8rem;
+  box-sizing: border-box;
+}
+
+.search::placeholder {
+  color: black;
+}
+
+.search_container {
+  position: relative;
+  top: 0;
+}
+.places {
+  color: #434343;
+}
+.settings {
+  position: absolute;
+  top: -0.4rem;
+  right: 5px;
 }
