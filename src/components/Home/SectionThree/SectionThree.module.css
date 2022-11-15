@@ -69,22 +69,22 @@
   right: 0rem;
 }
 .nft1_mobile {
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: -1rem;
 }
 .nft2_mobile {
   top: 7rem;
-  right: 8rem;
+  right: 4rem;
 }
 .nft3_mobile {
-  top: 10rem;
-  right: 1rem;
+  top: 9rem;
+  right: -1rem;
 }
 .nfts {
   /* height: 25rem; */
   /* width: 25rem; */
 }
 .nft_mobile {
-  height: 15rem;
-  width: 15rem;
+  height: 13rem;
+  width: 13rem;
 }
