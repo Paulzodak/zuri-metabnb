@@ -4,9 +4,13 @@ import MBtoken from "../images/page 1/MBtoken.svg";
 import metamask from "../images/page 1/metamask.svg";
 import opensea from "../images/page 1/opensea.svg";
 
-const Subfooter = () => {
+const Subfooter = ({ screen }) => {
   return (
-    <section className={classes.subfooter}>
+    <section
+      className={`${classes.subfooter} ${
+        screen.mobile ? classes.mobile : null
+      }  ${screen.smallScreens ? classes.smallScreens : classes.smallScreens}`}
+    >
       <img src={MBtoken} alt="" className={classes.logo} />
       <img src={metamask} alt="" className={classes.logo} />
       <img src={opensea} alt="" className={classes.logo} />

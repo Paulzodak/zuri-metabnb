@@ -3,7 +3,7 @@ import Metabnb from "../../../images/page 1/Metabnb.svg";
 import Metalogo from "../../../images/page 1/Metalogo.svg";
 import classes from "./Navbar.module.css";
 import NavItems from "./NavItems";
-const Navbar = ({ setShowModal }) => {
+const Navbar = ({ screen, setShowModal }) => {
   const navItems = [
     {
       header: "Home",
@@ -23,16 +23,24 @@ const Navbar = ({ setShowModal }) => {
     },
   ];
   return (
-    <nav className={`${classes.Navbar} ${classes.border}`}>
+    <nav
+      className={`${screen.mobile ? classes.Navbar_mobile : classes.Navbar} ${
+        classes.border
+      }`}
+    >
       <div className={classes.border}>
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />
       </div>
-      <div className={`${classes.border} ${classes.NavItems}`}>
-        {navItems.map((items) => {
-          return <NavItems key={items.header} items={items} />;
-        })}
-      </div>
+      {!screen.mobile ? (
+        <div className={`${classes.border} ${classes.NavItems}`}>
+          {navItems.map((items) => {
+            return <NavItems key={items.header} items={items} />;
+          })}
+        </div>
+      ) : (
+        <></>
+      )}
       <div className={classes.bordeer}>
         <button
           onClick={() => {

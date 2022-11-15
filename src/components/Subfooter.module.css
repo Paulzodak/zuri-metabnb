@@ -1,9 +1,18 @@
 .subfooter {
   background-color: #a02279;
-  padding-top: 0.8rem;
+  padding-top: 0.5rem;
   height: 4rem;
   display: grid;
-  grid-template-columns: 15rem 15rem 15rem;
   justify-content: space-around;
   box-sizing: border-box;
+}
+.smallScreens {
+  grid-template-columns: 15rem 15rem 15rem;
+}
+.mobile {
+  grid-template-columns: 7rem 7rem 7rem;
+}
+.subfooter > img {
+  height: 100%;
+  width: 100%;
 }

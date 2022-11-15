@@ -1,8 +1,15 @@
 .container {
   display: grid;
-  grid-template-columns: 60% 40%;
+
   justify-content: space-between;
+}
+.desktop {
+  grid-template-columns: 1.9fr 1.5fr;
   margin: 8rem 4rem;
+}
+.mobile {
+  grid-template-columns: 1.9fr;
+  margin: 4rem 2rem;
 }
 .border {
   border: 2px solid red;
@@ -45,10 +52,11 @@
 }
 .nft_container {
   display: grid;
+  margin-left: 2rem;
   grid-template-columns: 48% 48%;
   justify-content: space-between;
 }
-.nft_container_mobile {
+.nft_container_tablet {
   display: grid;
   text-align: center;
 }

@@ -2,6 +2,7 @@ import React from "react";
 
 import classes from "./NFT.module.css";
 import stars from "../../../images/page 1/stars.svg";
+import { Image } from "cloudinary-react";
 
 const NftPrototype = ({ item }) => {
   return (

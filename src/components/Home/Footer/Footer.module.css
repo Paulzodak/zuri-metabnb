@@ -2,20 +2,30 @@
   background-color: black;
   height: 20rem;
   display: grid;
-  grid-template-columns: 15rem 10rem 10rem 10rem;
+  /* grid-template-columns: 15rem 10rem 10rem 10rem; */
   justify-content: space-around;
+}
+.mobile {
+  grid-template-columns: 7rem 4rem 4rem 4rem;
 }
 .border {
   border: 1px solid red;
 }
-.community {
+.header {
   color: white;
   padding-top: 2rem;
 }
-.community > h1 {
+.name {
   font-size: 1.3rem;
 }
-.community > div {
+.items {
+  margin-top: 1.3rem;
+}
+.name_mobile {
+  font-size: 0.9rem;
+}
+.items_mobile {
+  font-size: 0.7rem;
   margin-top: 1.3rem;
 }
 .social_icons {

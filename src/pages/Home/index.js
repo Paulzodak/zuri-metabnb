@@ -6,17 +6,17 @@ import SectionTwo from "../../components/Home/SectionTwo/SectionTwo";
 import SectionThree from "../../components/Home/SectionThree/SectionThree";
 import Modal from "../../components/Modal";
 import Footer from "../../components/Home/Footer/Footer";
-const Index = () => {
+const Index = ({ screen }) => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <Navbar setShowModal={setShowModal} />
-      <SectionOne />
-      <Subfooter />
-      <SectionTwo />
-      <SectionThree />
-      <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</>
-      <Footer />
+      <Navbar screen={screen} setShowModal={setShowModal} />
+      <SectionOne screen={screen} />
+      <Subfooter screen={screen} />
+      <SectionTwo screen={screen} />
+      <SectionThree screen={screen} />
+      {/* <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</> */}
+      <Footer screen={screen} />
     </>
   );
 };

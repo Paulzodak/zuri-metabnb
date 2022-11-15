@@ -6,13 +6,15 @@ import TwitterLogo from "../../../images/LOGOS/TwitterLogo";
 import FacebookLogo from "../../../images/LOGOS/FacebookLogo";
 import IntagramLogo from "../../../images/LOGOS/IntagramLogo";
 import CopyrightLogo from "../../../images/LOGOS/CopyrightLogo";
-const Footer = () => {
+const Footer = ({ screen }) => {
   const community = ["NFT", "Tokens", "Landlords", "Discord"];
   const places = ["Castle", "Farms", "Beach", "Learn more"];
   const aboutUs = ["Road map", "Creators", "Career", "Contact us"];
 
   return (
-    <footer className={classes.footer}>
+    <footer
+      className={` ${classes.footer} ${screen.mobile ? classes.mobile : null}`}
+    >
       <div className={classes.Metabnb}>
         <Metabnb />
         <div className={classes.social_icons}>
@@ -24,9 +26,9 @@ const Footer = () => {
           <CopyrightLogo /> 2022 Metabnb
         </div>
       </div>
-      <List name={"Community"} props={community} />
-      <List name={"Places"} props={places} />
-      <List name={"About us"} props={aboutUs} />
+      <List screen={screen} name={"Community"} props={community} />
+      <List screen={screen} name={"Places"} props={places} />
+      <List screen={screen} name={"About us"} props={aboutUs} />
     </footer>
   );
 };
