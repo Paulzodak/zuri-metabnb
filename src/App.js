@@ -2,8 +2,6 @@ import Index from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import PlaceToStay from "./pages/PlaceToStay/PlaceToStay";
 import { useMediaQuery } from "react-responsive";
-import { CloudinaryContext } from "cloudinary-react";
-import { Image } from "cloudinary-react";
 function App() {
   const largeScreens = useMediaQuery({
     query: "(min-width :1025px)",
@@ -40,15 +38,6 @@ function App() {
           element={<PlaceToStay screen={screen} />}
         />
       </Routes>
-      <CloudinaryContext cloudName="dxs8cpeae">
-        <div>
-          <Image
-            publicId="https://res.cloudinary.com/dxs8cpeae/image/upload/v1668512204/ZURI-BNB/page%201/image_4_bvgxfd.svg"
-            width="50"
-          />
-        </div>
-        {/* <Image publicId="sample" width="0.5" /> */}
-      </CloudinaryContext>
     </div>
   );
 }

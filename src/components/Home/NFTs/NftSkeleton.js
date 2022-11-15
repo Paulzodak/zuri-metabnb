@@ -8,7 +8,7 @@ const Skeleton = (props) => {
     <div className={classes.nft_container}>
       <ContentLoader
         speed={2}
-        width={200}
+        width={250}
         height={300}
         viewBox="0 0 200 300"
         backgroundColor="#f3f3f3"
