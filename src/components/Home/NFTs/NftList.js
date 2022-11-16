@@ -5,8 +5,10 @@ const NftList = ({ screen, NFTs }) => {
   return (
     <div
       className={`${classes.container} ${
-        screen.tablet ? classes.tablet : classes.desktop
-      } ${screen.mobile ? classes.mobile : classes}`}
+        screen.tablet ? classes.tablet : null
+      } ${screen.mobile ? classes.mobile : null}  ${
+        screen.smallScreens ? classes.desktop : null
+      } ${screen.largeScreens ? classes.desktop : null}`}
     >
       {NFTs.map((item) => {
         return <NftPrototype item={item} />;

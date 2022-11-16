@@ -16,7 +16,7 @@
   justify-content: space-around;
 }
 .desktop {
-  grid-template-columns: 16rem 16rem 16rem 16rem;
+  grid-template-columns: 20rem 20rem 20rem 20rem;
   margin: 1rem 3rem;
 }
 .tablet {

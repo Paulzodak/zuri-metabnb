@@ -15,7 +15,7 @@
   justify-content: space-around;
 }
 .desktop {
-  grid-template-columns: 16rem 16rem 16rem 16rem;
+  grid-template-columns: 22rem 22rem 22rem 22rem;
   margin: 0 3rem;
 }
 .tablet {
@@ -23,7 +23,7 @@
   margin: 0 3rem;
 }
 .mobile {
-  grid-template-columns: 18rem;
+  grid-template-columns: 22rem;
   margin: 0 1rem;
 }
 .nft_container > img {
