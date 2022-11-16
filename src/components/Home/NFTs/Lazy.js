@@ -5,9 +5,9 @@ import { CloudinaryContext, Image } from "cloudinary-react";
 const Lazy = ({ screen, item }) => {
   return (
     <div
-      className={`${classes.nft_container} ${
-        screen.tablet ? classes.nft_container_tablet : classes.nft_container
-      } ${
+      className={`${classes.nft_container}  ${
+        screen.mobile ? classes.nft_container_mobile : null
+      } ${screen.tablet ? classes.nft_container_tablet : null} ${
         screen.smallScreens || screen.largeScreens
           ? classes.nft_container_smallScreens
           : null
