@@ -9,7 +9,7 @@
   width: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 3rem 3rem;
   margin: 6rem 4rem;
   position: relative;
 }
