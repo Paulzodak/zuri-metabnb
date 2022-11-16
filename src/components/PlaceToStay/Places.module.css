@@ -5,6 +5,14 @@
   margin: 6rem 4rem;
   position: relative;
 }
+.places_mobile {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 6rem 4rem;
+  position: relative;
+}
 .search {
   border: 1px solid #b4b4b4;
   font-family: "Red Rose", cursive;

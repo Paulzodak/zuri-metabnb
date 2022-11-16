@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Places.module.css";
 import SettingsLogo from "../../images/LOGOS/SettingsLogo";
-const Places = () => {
+const Places = ({ screen }) => {
   const places = [
     { name: "Restaurant" },
     { name: "Cottage" },
@@ -13,7 +13,11 @@ const Places = () => {
     { name: "Farm" },
   ];
   return (
-    <section className={classes.places}>
+    <section
+      className={
+        screen.mobile || screen.tablet ? classes.places_mobile : classes.places
+      }
+    >
       {places.map((item) => {
         return <div className={classes.placestostay}>{item.name}</div>;
       })}
