@@ -55,7 +55,13 @@ const Navbar = ({ setShowSlider, screen, setShowModal }) => {
         <></>
       )}
 
-      <div className={classes.meta_container}>
+      <div
+        className={
+          screen.mobile || screen.tablet
+            ? classes.meta_container_mobile
+            : classes.meta_container
+        }
+      >
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />
       </div>
@@ -74,8 +80,14 @@ const Navbar = ({ setShowSlider, screen, setShowModal }) => {
           setShowModal(true);
         }}
         className={`${
-          screen.mobile ? classes.connectWallet_mobile : classes.connectWallet
-        }`}
+          screen.mobile
+            ? classes.btn_mobile
+            : screen.tablet
+            ? classes.btn_tablet
+            : screen.smallScreens || screen.largeScreens
+            ? classes.btn_smallScreen
+            : null
+        } ${classes.connectWallet}`}
       >
         Connect wallet
       </button>
