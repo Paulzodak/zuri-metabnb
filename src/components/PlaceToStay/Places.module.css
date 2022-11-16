@@ -1,15 +1,15 @@
 .places {
   width: 85%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 6rem 4rem;
   position: relative;
 }
 .places_mobile {
   width: 85%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 3rem 3rem;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  grid-template-rows: 4rem 4rem;
   margin: 4rem 2rem;
   position: relative;
 }
