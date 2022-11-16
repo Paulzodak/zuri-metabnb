@@ -3,7 +3,9 @@ import Metabnb from "../../../images/page 1/Metabnb.svg";
 import Metalogo from "../../../images/page 1/Metalogo.svg";
 import classes from "./Navbar.module.css";
 import NavItems from "./NavItems";
-const Navbar = ({ screen, setShowModal }) => {
+import { FaListUl } from "react-icons/fa";
+import { IconContext } from "react-icons";
+const Navbar = ({ setShowSlider, screen, setShowModal }) => {
   const navItems = [
     {
       header: "Home",
@@ -32,6 +34,28 @@ const Navbar = ({ screen, setShowModal }) => {
           : null
       } ${classes.border}`}
     >
+      <>
+        {screen.mobile || screen.tablet ? (
+          <div
+            onClick={() => {
+              setShowSlider(true);
+            }}
+          >
+            <IconContext.Provider
+              value={{
+                size: "2rem",
+
+                color: "#a02279",
+                className: classes.menu_icon,
+              }}
+            >
+              <FaListUl />
+            </IconContext.Provider>
+          </div>
+        ) : (
+          <></>
+        )}
+      </>
       <div className={classes.border}>
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />

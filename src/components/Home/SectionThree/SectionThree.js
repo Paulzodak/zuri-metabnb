@@ -3,7 +3,7 @@ import classes from "./SectionThree.module.css";
 import nft1 from "../../../images/page 1/image 13.svg";
 import nft2 from "../../../images/page 1/image 14.svg";
 import nft3 from "../../../images/page 1/image 15.svg";
-import nftFrame from "../../../images/page 1/nfts_frame.svg";
+import nftFrame from "../../../images/page 1/nfts_frame.png";
 
 import { CloudinaryContext, Image } from "cloudinary-react";
 

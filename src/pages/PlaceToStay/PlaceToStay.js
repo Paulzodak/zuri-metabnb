@@ -6,6 +6,7 @@ import Modal from "../../components/Modal";
 import Footer from "../../components/Home/Footer/Footer";
 import Places from "../../components/PlaceToStay/Places";
 import NftList from "../../components/Home/NFTs/NftList";
+import SliderMenu from "../../components/SliderMenu";
 // import nft1 from "../../images/placetostay/Frame 151.svg";
 // import nft2 from "../../images/placetostay/Frame 151-1.svg";
 // import nft3 from "../../images/placetostay/Frame 151-2.svg";
@@ -22,7 +23,7 @@ import NftList from "../../components/Home/NFTs/NftList";
 // import nft14 from "../../images/placetostay/Frame 151-13.svg";
 // import nft15 from "../../images/placetostay/Frame 151-14.svg";
 // import nft16 from "../../images/placetostay/Frame 151-15.svg";
-const PlaceToStay = () => {
+const PlaceToStay = ({ showSlider, setShowSlider, screen }) => {
   const [showModal, setShowModal] = useState(false);
   const NFTs = [
     {
@@ -162,12 +163,21 @@ const PlaceToStay = () => {
 
   return (
     <section>
-      <Navbar setShowModal={setShowModal} />
-      <Places />
-      <NftList NFTs={NFTs} />
+      <SliderMenu showSlider={showSlider} setShowSlider={setShowSlider} />
+      <Navbar
+        setShowSlider={setShowSlider}
+        screen={screen}
+        setShowModal={setShowModal}
+      />
+      <Places screen={screen} />
+      <NftList screen={screen} NFTs={NFTs} />
       <div className={classes.margin} />
-      <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</>
-      <Footer />
+      <>
+        {showModal ? (
+          <Modal screen={screen} setShowModal={setShowModal} />
+        ) : null}
+      </>
+      <Footer screen={screen} />
     </section>
   );
 };

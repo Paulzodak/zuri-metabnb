@@ -3,6 +3,7 @@
   background-color: #a02279;
   /* border: 1px solid red; */
   margin-top: 1rem;
+
   display: grid;
 }
 .details {
@@ -95,6 +96,8 @@
   width: 13rem;
 }
 .nft_frame {
-  height: 100%;
-  width: 100%;
+  position: relative;
+  top: 2rem;
+  height: 80%;
+  width: 80%;
 }

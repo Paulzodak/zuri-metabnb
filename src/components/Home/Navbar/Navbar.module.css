@@ -1,3 +1,6 @@
+nav {
+  position: relative;
+}
 .Navbar_smallScreens {
   margin: 1rem 4rem;
   height: 2.5rem;
@@ -9,14 +12,14 @@
   margin: 1rem 2rem;
   height: 2.5rem;
   display: grid;
-  grid-template-columns: 1fr 9rem;
+  grid-template-columns: 0.3fr 1fr 7rem;
   justify-content: space-between;
 }
 .Navbar_tablet {
   margin: 1rem 2rem;
   height: 2.5rem;
   display: grid;
-  grid-template-columns: 1fr 9rem;
+  grid-template-columns: 0.5fr 1fr 9rem;
   justify-content: space-between;
 }
 .Metabnb {
@@ -53,4 +56,15 @@
 .placetostay {
   text-decoration: none;
   color: black;
+}
+.placetostay_slider {
+  text-decoration: none;
+  display: grid;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+}
+.menu_icon {
+  position: relative;
+  top: 0.3rem;
 }

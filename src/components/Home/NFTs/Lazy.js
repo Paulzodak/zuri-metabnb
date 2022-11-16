@@ -2,6 +2,9 @@ import React from "react";
 import classes from "./NFT.module.css";
 import stars from "../../../images/page 1/stars.svg";
 import { CloudinaryContext, Image } from "cloudinary-react";
+import { Suspense, lazy } from "react";
+import Skeleton from "./NftSkeleton";
+const Pictures = lazy((screen, item) => import("./Pictures"));
 const Lazy = ({ screen, item }) => {
   return (
     <div
@@ -13,9 +16,10 @@ const Lazy = ({ screen, item }) => {
           : null
       }`}
     >
-      <CloudinaryContext cloudName="dxs8cpeae">
-        <Image publicId={item.link} width="100%" />
-      </CloudinaryContext>
+      <Suspense fallback={<Skeleton />}>
+        <Pictures screen={screen} item={item} />
+      </Suspense>
+
       <div className={`${classes.details_container}`}>
         <div>{item.name}</div>
         <div className={classes.float}>
