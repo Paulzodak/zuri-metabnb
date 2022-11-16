@@ -2,9 +2,13 @@ import React from "react";
 import classes from "./NFT.module.css";
 import stars from "../../../images/page 1/stars.svg";
 import { CloudinaryContext, Image } from "cloudinary-react";
-const Lazy = ({ item }) => {
+const Lazy = ({ screen, item }) => {
   return (
-    <div className={classes.nft_container}>
+    <div
+      className={`${classes.nft_container} ${
+        screen.tablet ? classes.nft_container_tablet : classes.nft_container
+      }`}
+    >
       <CloudinaryContext cloudName="dxs8cpeae">
         <Image publicId={item.link} width="100%" />
       </CloudinaryContext>

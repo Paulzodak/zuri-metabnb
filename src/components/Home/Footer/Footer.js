@@ -10,26 +10,36 @@ const Footer = ({ screen }) => {
   const community = ["NFT", "Tokens", "Landlords", "Discord"];
   const places = ["Castle", "Farms", "Beach", "Learn more"];
   const aboutUs = ["Road map", "Creators", "Career", "Contact us"];
-
+  // console.log(screen);
   return (
     <footer
-      className={` ${classes.footer} ${screen.mobile ? classes.mobile : null}`}
+      className={` ${classes.footer} ${screen.tablet ? classes.tablet : null} ${
+        screen.mobile ? classes.mobile : null
+      }`}
     >
-      <div className={classes.Metabnb}>
+      <div
+        className={`${screen.mobile ? classes.Metabnb : null} ${
+          screen.tablet ? classes.Metabnb_tablet : null
+        }`}
+      >
         <Metabnb
-          height={`${classes.footer ? "20" : null}`}
-          width={`${classes.footer ? "100" : null}`}
+          height={`${screen.mobile ? "20" : screen.tablet ? "30" : null}`}
+          width={`${screen.mobile ? "110" : screen.tablet ? "150" : null}`}
         />
         <div
           className={`${classes.social_icons} ${
             screen.mobile ? classes.social_icons_mobile : null
-          }`}
+          } ${screen.tablet ? classes.social_icons_tablet : null} `}
         >
           <FacebookLogo />
           <IntagramLogo />
           <TwitterLogo />
         </div>
-        <div className={`${screen.mobile ? classes.copyright_mobile : null}`}>
+        <div
+          className={` ${screen.tablet ? classes.copyright_tablet : null} ${
+            screen.mobile ? classes.copyright_mobile : null
+          }`}
+        >
           <CopyrightLogo /> 2022 Metabnb
         </div>
       </div>

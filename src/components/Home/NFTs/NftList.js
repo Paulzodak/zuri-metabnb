@@ -11,7 +11,7 @@ const NftList = ({ screen, NFTs }) => {
       } ${screen.largeScreens ? classes.desktop : null}`}
     >
       {NFTs.map((item) => {
-        return <NftPrototype item={item} />;
+        return <NftPrototype screen={screen} item={item} />;
       })}
     </div>
   );

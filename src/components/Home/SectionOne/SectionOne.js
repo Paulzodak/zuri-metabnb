@@ -9,9 +9,9 @@ import { CloudinaryContext, Image } from "cloudinary-react";
 const SectionOne = ({ screen }) => {
   return (
     <section
-      className={`${classes.container} ${
-        screen.mobile ? classes.mobile : classes.desktop
-      } ${classes.bordeer}`}
+      className={`${classes.container}  ${
+        screen.tablet ? classes.tablet : null
+      } ${screen.mobile ? classes.mobile : null} ${classes.bordeer}`}
     >
       <h1 className={classes.bordeer}>
         Rent a <span className={classes.coloured_text}>Place</span> away from{" "}
@@ -30,56 +30,53 @@ const SectionOne = ({ screen }) => {
           <button className={`${classes.search_btn}`}>Search</button>
         </div>
       </h1>
-      {!screen.mobile ? (
-        <div
-          className={`${
-            screen.tablet ? classes.nft_container_tablet : classes.nft_container
-          } ${classes.bordeer}`}
-        >
-          <div className={`${classes.nft_container_1} ${classes.bordeer}`}>
+
+      <div
+        className={` ${classes.nft_container} ${
+          screen.tablet ? classes.nft_container_tablet : null
+        } ${screen.mobile ? classes.nft_container_mobile : null} ${
+          classes.bordeer
+        }`}
+      >
+        <div className={`${classes.nft_container_1} ${classes.bordeer}`}>
+          <CloudinaryContext cloudName="dxs8cpeae">
+            <Image
+              publicId={
+                "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668512159/ZURI-BNB/page%201/image_2_fkbkly.svg"
+              }
+              width="100%"
+            />
+            <Image
+              publicId={
+                "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543127/ZURI-BNB/page%201/image_4_kcokfv.svg"
+              }
+              width="100%"
+            />
+          </CloudinaryContext>
+          {/* <img src={nft2} alt="" />
+            <img src={nft4} alt="" /> */}
+        </div>
+        {
+          <div className={`${classes.nft_container_2} ${classes.bordeer}`}>
             <CloudinaryContext cloudName="dxs8cpeae">
               <Image
                 publicId={
-                  "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668512159/ZURI-BNB/page%201/image_2_fkbkly.svg"
+                  "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543148/ZURI-BNB/page%201/image_1_fdaqa1.svg"
                 }
                 width="100%"
               />
               <Image
                 publicId={
-                  "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543127/ZURI-BNB/page%201/image_4_kcokfv.svg"
+                  "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543128/ZURI-BNB/page%201/image_3_s9nq1n.svg"
                 }
                 width="100%"
               />
             </CloudinaryContext>
-            {/* <img src={nft2} alt="" />
-            <img src={nft4} alt="" /> */}
-          </div>
-          {!screen.tablet ? (
-            <div className={`${classes.nft_container_2} ${classes.bordeer}`}>
-              <CloudinaryContext cloudName="dxs8cpeae">
-                <Image
-                  publicId={
-                    "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543148/ZURI-BNB/page%201/image_1_fdaqa1.svg"
-                  }
-                  width="100%"
-                />
-                <Image
-                  publicId={
-                    "https://res.cloudinary.com/dxs8cpeae/image/upload/v1668543128/ZURI-BNB/page%201/image_3_s9nq1n.svg"
-                  }
-                  width="100%"
-                />
-              </CloudinaryContext>
-              {/* <img src={nft1} alt="" />
+            {/* <img src={nft1} alt="" />
               <img src={nft3} alt="" /> */}
-            </div>
-          ) : (
-            <></>
-          )}
-        </div>
-      ) : (
-        <></>
-      )}
+          </div>
+        }
+      </div>
     </section>
   );
 };

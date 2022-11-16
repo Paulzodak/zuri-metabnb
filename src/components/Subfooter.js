@@ -9,7 +9,9 @@ const Subfooter = ({ screen }) => {
     <section
       className={`${classes.subfooter} ${
         screen.mobile ? classes.mobile : null
-      }  ${screen.smallScreens ? classes.smallScreens : classes.smallScreens}`}
+      }  ${screen.tablet ? classes.tablet : null} ${
+        screen.smallScreens ? classes.smallScreens : null
+      }`}
     >
       <img src={MBtoken} alt="" className={classes.logo} />
       <img src={metamask} alt="" className={classes.logo} />

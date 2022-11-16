@@ -5,9 +5,9 @@ import stars from "../../../images/page 1/stars.svg";
 import { Image } from "cloudinary-react";
 import { Suspense, lazy } from "react";
 import Skeleton from "./NftSkeleton";
-const Lazy = lazy((item) => import("./Lazy"));
+const Lazy = lazy((screen, item) => import("./Lazy"));
 
-const NftPrototype = ({ item }) => {
+const NftPrototype = ({ screen, item }) => {
   // <CloudinaryContext cloudName="dxs8cpeae">
   //       <Image
   //         publicId="https://res.cloudinary.com/dxs8cpeae/image/upload/v1668512204/ZURI-BNB/page%201/image_4_bvgxfd.svg"
@@ -28,7 +28,7 @@ const NftPrototype = ({ item }) => {
           <img src={stars} alt="" />
         </div>
       </div> */}
-      <Lazy item={item} />
+      <Lazy screen={screen} item={item} />
     </Suspense>
   );
 };

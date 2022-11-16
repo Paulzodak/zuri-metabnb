@@ -24,15 +24,15 @@ const Navbar = ({ screen, setShowModal }) => {
   ];
   return (
     <nav
-      className={`${screen.mobile ? classes.Navbar_mobile : classes.Navbar} ${
-        classes.border
-      }`}
+      className={`${screen.mobile ? classes.Navbar_mobile : null} ${
+        screen.tablet ? classes.Navbar_tablet : null
+      } ${classes.border}`}
     >
       <div className={classes.border}>
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />
       </div>
-      {!screen.mobile ? (
+      {!screen.mobile && !screen.tablet ? (
         <div className={`${classes.border} ${classes.NavItems}`}>
           {navItems.map((items) => {
             return <NavItems key={items.header} items={items} />;

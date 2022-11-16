@@ -12,6 +12,9 @@
 .mobile {
   grid-template-columns: 7rem 7rem 7rem;
 }
+.tablet {
+  grid-template-columns: 9rem 9rem 9rem;
+}
 .subfooter > img {
   height: 100%;
   width: 100%;

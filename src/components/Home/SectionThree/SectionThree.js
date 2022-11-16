@@ -9,7 +9,9 @@ const SectionThree = ({ screen }) => {
   console.log(screen);
   return (
     <section
-      className={`${classes.container} ${screen.mobile ? classes.mobile : null}
+      className={`${classes.container}  ${
+        screen.tablet ? classes.tablet : null
+      } ${screen.mobile ? classes.mobile : null}
         ${screen.smallScreens ? classes.smallScreens : null}
         ${screen.largeScreens ? classes.smallScreens : null}
       }`}

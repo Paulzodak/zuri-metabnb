@@ -12,6 +12,13 @@
   grid-template-columns: 1fr 9rem;
   justify-content: space-between;
 }
+.Navbar_tablet {
+  margin: 1rem 2rem;
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 9rem;
+  justify-content: space-between;
+}
 .Metabnb {
   margin-left: 0.2rem;
   height: 100%;
