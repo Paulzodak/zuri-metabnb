@@ -3,8 +3,8 @@
 
   justify-content: space-between;
 }
-.desktop {
-  grid-template-columns: 1.9fr;
+.smallScreens {
+  grid-template-columns: 40% 50%;
   margin: 8rem 4rem;
 }
 .mobile {

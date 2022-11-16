@@ -10,7 +10,7 @@ const Subfooter = ({ screen }) => {
       className={`${classes.subfooter} ${
         screen.mobile ? classes.mobile : null
       }  ${screen.tablet ? classes.tablet : null} ${
-        screen.smallScreens ? classes.smallScreens : null
+        screen.smallScreens || screen.largeScreens ? classes.smallScreens : null
       }`}
     >
       <img src={MBtoken} alt="" className={classes.logo} />

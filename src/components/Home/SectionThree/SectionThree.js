@@ -1,8 +1,10 @@
 import React from "react";
 import classes from "./SectionThree.module.css";
-import nft1 from "../../../images/page 1/image 13.png";
-import nft2 from "../../../images/page 1/image 14.png";
-import nft3 from "../../../images/page 1/image 15.png";
+import nft1 from "../../../images/page 1/image 13.svg";
+import nft2 from "../../../images/page 1/image 14.svg";
+import nft3 from "../../../images/page 1/image 15.svg";
+import nftFrame from "../../../images/page 1/nfts_frame.svg";
+
 import { CloudinaryContext, Image } from "cloudinary-react";
 
 const SectionThree = ({ screen }) => {
@@ -30,6 +32,7 @@ const SectionThree = ({ screen }) => {
         <button>Learn more</button>
       </div>
       <div className={`${classes.nft_container}`}>
+        <img src={nftFrame} alt={""} className={classes.nft_frame} />
         {/* <CloudinaryContext cloudName="dxs8cpeae">
           <div
             className={`${classes.nft11}  ${classes.nfts} ${
@@ -71,27 +74,33 @@ const SectionThree = ({ screen }) => {
             />
           </div>
         </CloudinaryContext> */}
-        <img
+        {/* <img
           src={nft1}
           alt=""
           className={`${classes.nft11}  ${classes.nfts} ${
             screen.mobile ? classes.nft_mobile : null
-          } ${screen.mobile ? classes.nft1_mobile : null}`}
+          } ${screen.mobile ? classes.nft1_mobile : null} ${
+            screen.smallScreens || screen.largeScreens ? classes.nft1 : null
+          }`}
         />
         <img
           src={nft2}
           alt=""
           className={`${classes.nft22} ${classes.nfts}   ${
             screen.mobile ? classes.nft_mobile : null
-          } ${screen.mobile ? classes.nft2_mobile : null}`}
+          } ${screen.mobile ? classes.nft2_mobile : null} ${
+            screen.smallScreens || screen.largeScreens ? classes.nft2 : null
+          }`}
         />
         <img
           src={nft3}
           alt=""
-          className={`${classes.nft33} ${classes.nfts}   ${
+          className={` ${classes.nfts}   ${
             screen.mobile ? classes.nft_mobile : null
-          } ${screen.mobile ? classes.nft3_mobile : null}`}
-        />
+          } ${screen.mobile ? classes.nft3_mobile : null} ${
+            screen.smallScreens || screen.largeScreens ? classes.nft3 : null
+          }`}
+        /> */}
       </div>
     </section>
   );

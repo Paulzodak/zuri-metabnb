@@ -7,6 +7,10 @@ const Lazy = ({ screen, item }) => {
     <div
       className={`${classes.nft_container} ${
         screen.tablet ? classes.nft_container_tablet : classes.nft_container
+      } ${
+        screen.smallScreens || screen.largeScreens
+          ? classes.nft_container_smallScreens
+          : null
       }`}
     >
       <CloudinaryContext cloudName="dxs8cpeae">

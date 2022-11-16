@@ -87,10 +87,14 @@
   right: -1rem;
 }
 .nfts {
-  /* height: 25rem; */
-  /* width: 25rem; */
+  height: 60%;
+  width: 60%;
 }
 .nft_mobile {
   height: 13rem;
   width: 13rem;
+}
+.nft_frame {
+  height: 100%;
+  width: 100%;
 }

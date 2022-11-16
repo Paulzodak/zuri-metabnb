@@ -11,7 +11,9 @@ const SectionOne = ({ screen }) => {
     <section
       className={`${classes.container}  ${
         screen.tablet ? classes.tablet : null
-      } ${screen.mobile ? classes.mobile : null} ${classes.bordeer}`}
+      } ${screen.mobile ? classes.mobile : null} ${classes.bordeer} ${
+        screen.smallScreens || screen.largeScreens ? classes.smallScreens : null
+      } ${classes.bordeer}`}
     >
       <h1 className={classes.bordeer}>
         Rent a <span className={classes.coloured_text}>Place</span> away from{" "}

@@ -26,6 +26,10 @@ const Navbar = ({ screen, setShowModal }) => {
     <nav
       className={`${screen.mobile ? classes.Navbar_mobile : null} ${
         screen.tablet ? classes.Navbar_tablet : null
+      }  ${
+        screen.smallScreens || screen.largeScreens
+          ? classes.Navbar_smallScreens
+          : null
       } ${classes.border}`}
     >
       <div className={classes.border}>

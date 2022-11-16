@@ -15,21 +15,45 @@ const Footer = ({ screen }) => {
     <footer
       className={` ${classes.footer} ${screen.tablet ? classes.tablet : null} ${
         screen.mobile ? classes.mobile : null
-      }`}
+      } ${screen.smallScreens || screen.largeScreens ? classes.desktop : null}`}
     >
       <div
-        className={`${screen.mobile ? classes.Metabnb : null} ${
+        className={`${screen.mobile ? classes.Metabnb_mobile : null} ${
           screen.tablet ? classes.Metabnb_tablet : null
+        } ${
+          screen.smallScreens || screen.largeScreens
+            ? classes.Metabnb_desktop
+            : null
         }`}
       >
         <Metabnb
-          height={`${screen.mobile ? "20" : screen.tablet ? "30" : null}`}
-          width={`${screen.mobile ? "110" : screen.tablet ? "150" : null}`}
+          height={`${
+            screen.mobile
+              ? "20"
+              : screen.tablet
+              ? "30"
+              : screen.smallScreens || screen.largeScreens
+              ? "40"
+              : null
+          }`}
+          width={`${
+            screen.mobile
+              ? "110"
+              : screen.tablet
+              ? "150"
+              : screen.smallScreens || screen.largeScreens
+              ? "200"
+              : null
+          }`}
         />
         <div
           className={`${classes.social_icons} ${
             screen.mobile ? classes.social_icons_mobile : null
-          } ${screen.tablet ? classes.social_icons_tablet : null} `}
+          } ${screen.tablet ? classes.social_icons_tablet : null} ${
+            screen.smallScreens || screen.largeScreens
+              ? classes.social_icons_smallScreens
+              : null
+          } `}
         >
           <FacebookLogo />
           <IntagramLogo />
@@ -38,6 +62,10 @@ const Footer = ({ screen }) => {
         <div
           className={` ${screen.tablet ? classes.copyright_tablet : null} ${
             screen.mobile ? classes.copyright_mobile : null
+          } ${
+            screen.smallScreens || screen.largeScreens
+              ? classes.copyright_smallScreens
+              : null
           }`}
         >
           <CopyrightLogo /> 2022 Metabnb

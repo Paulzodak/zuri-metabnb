@@ -8,11 +8,15 @@
 
 .mobile {
   grid-template-columns: 6rem 5rem 4rem 4rem;
-  height: 15rem;
+  height: 17rem;
 }
 .tablet {
   grid-template-columns: 10rem 8rem 7rem 7rem;
-  height: 18rem;
+  height: 19rem;
+}
+.desktop {
+  grid-template-columns: 15rem 10rem 10rem 10rem;
+  height: 22rem;
 }
 .border {
   border: 1px solid red;
@@ -40,14 +44,19 @@
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.social_icons_desktop {
-  width: 50%;
-}
+
 .social_icons_mobile {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
+.Metabnb_mobile {
+  padding-top: 2.5rem;
+}
+.copyright_mobile {
+  margin-top: 3rem;
+  color: white;
+}
 /* ------------ */
 .name_tablet {
   font-size: 1.2rem;
@@ -56,28 +65,35 @@
   font-size: 0.8rem;
   margin-top: 1.3rem;
 }
+
 .social_icons_tablet {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 .copyright_tablet {
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: white;
 }
-
 .Metabnb_tablet {
   padding-top: 2.5rem;
 }
 
-.Metabnb {
-  padding-top: 2.5rem;
+/* ------------------- */
+.name_smallScreens {
+  font-size: 1.3rem;
 }
-
-.copyright {
+.Metabnb_desktop {
+  padding-top: 2.7rem;
+}
+.items_smallScreens {
+  font-size: 0.8rem;
+  margin-top: 1.6rem;
+}
+.copyright_smallScreens {
   margin-top: 4rem;
   color: white;
 }
-.copyright_mobile {
-  margin-top: 2rem;
-  color: white;
+.social_icons_smallScreens {
+  width: 50%;
+  margin-top: 6rem;
 }
