@@ -74,7 +74,9 @@ const Navbar = ({ setShowSlider, screen, setShowModal }) => {
           onClick={() => {
             setShowModal(true);
           }}
-          className={`${classes.connectWallet}`}
+          className={`${
+            screen.mobile ? classes.connectWallet_mobile : classes.connectWallet
+          }`}
         >
           Connect wallet
         </button>
