@@ -16,13 +16,20 @@ const Footer = ({ screen }) => {
       className={` ${classes.footer} ${screen.mobile ? classes.mobile : null}`}
     >
       <div className={classes.Metabnb}>
-        <Metabnb />
-        <div className={classes.social_icons}>
+        <Metabnb
+          height={`${classes.footer ? "20" : null}`}
+          width={`${classes.footer ? "100" : null}`}
+        />
+        <div
+          className={`${classes.social_icons} ${
+            screen.mobile ? classes.social_icons_mobile : null
+          }`}
+        >
           <FacebookLogo />
           <IntagramLogo />
           <TwitterLogo />
         </div>
-        <div className={classes.copyright}>
+        <div className={`${screen.mobile ? classes.copyright_mobile : null}`}>
           <CopyrightLogo /> 2022 Metabnb
         </div>
       </div>

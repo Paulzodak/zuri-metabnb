@@ -15,7 +15,14 @@ const Index = ({ screen }) => {
       <Subfooter screen={screen} />
       <SectionTwo screen={screen} />
       <SectionThree screen={screen} />
-      <>{showModal ? <Modal setShowModal={setShowModal} /> : null}</>
+      <>
+        {showModal ? (
+          <Modal
+            mobile={screen.mobile ? true : false}
+            setShowModal={setShowModal}
+          />
+        ) : null}
+      </>
       <Footer screen={screen} />
     </>
   );

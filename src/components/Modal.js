@@ -4,7 +4,7 @@ import closebtn from "../images/page 1/close.svg";
 import RightcaretLogo from "../images/LOGOS/RIghtcaretLogo";
 import MetamaskLogo from "../images/page 1/wolve.svg";
 import WalletconnectLogo from "../images/page 1/walletconnect.svg";
-const Modal = ({ setShowModal }) => {
+const Modal = ({ setShowModal, mobile }) => {
   const wallet = [
     {
       name: " Metamask",
@@ -16,8 +16,12 @@ const Modal = ({ setShowModal }) => {
     },
   ];
   return (
-    <section className={classes.container}>
-      <div className={classes.modal_content_container}>
+    <section className={`${classes.container}`}>
+      <div
+        className={` ${mobile ? classes.mobile : null}  ${
+          classes.modal_content_container
+        }`}
+      >
         <h1>Connect wallet</h1>
         <img
           onClick={() => {

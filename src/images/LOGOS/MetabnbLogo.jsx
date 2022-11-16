@@ -1,10 +1,12 @@
 import React from "react";
 
-const Metabnb = () => {
+const Metabnb = ({ height, width }) => {
   return (
     <svg
-      width="233"
-      height="40"
+      // width="233"
+      // height="40"
+      height={height}
+      width={width}
       viewBox="0 0 233 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
