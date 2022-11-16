@@ -34,29 +34,28 @@ const Navbar = ({ setShowSlider, screen, setShowModal }) => {
           : null
       } ${classes.border}`}
     >
-      <>
-        {screen.mobile || screen.tablet ? (
-          <div
-            onClick={() => {
-              setShowSlider(true);
+      {screen.mobile || screen.tablet ? (
+        <div
+          onClick={() => {
+            setShowSlider(true);
+          }}
+        >
+          <IconContext.Provider
+            value={{
+              size: "2rem",
+
+              color: "#a02279",
+              className: classes.menu_icon,
             }}
           >
-            <IconContext.Provider
-              value={{
-                size: "2rem",
+            <FaListUl />
+          </IconContext.Provider>
+        </div>
+      ) : (
+        <></>
+      )}
 
-                color: "#a02279",
-                className: classes.menu_icon,
-              }}
-            >
-              <FaListUl />
-            </IconContext.Provider>
-          </div>
-        ) : (
-          <></>
-        )}
-      </>
-      <div className={classes.border}>
+      <div className={classes.meta_container}>
         <img alt="" src={Metalogo} className={classes.Metalogo} />
         <img alt="" src={Metabnb} className={classes.Metabnb} />
       </div>
@@ -69,18 +68,17 @@ const Navbar = ({ setShowSlider, screen, setShowModal }) => {
       ) : (
         <></>
       )}
-      <div className={classes.bordeer}>
-        <button
-          onClick={() => {
-            setShowModal(true);
-          }}
-          className={`${
-            screen.mobile ? classes.connectWallet_mobile : classes.connectWallet
-          }`}
-        >
-          Connect wallet
-        </button>
-      </div>
+
+      <button
+        onClick={() => {
+          setShowModal(true);
+        }}
+        className={`${
+          screen.mobile ? classes.connectWallet_mobile : classes.connectWallet
+        }`}
+      >
+        Connect wallet
+      </button>
     </nav>
   );
 };

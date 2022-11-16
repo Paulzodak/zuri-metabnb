@@ -2,17 +2,20 @@ nav {
   position: relative;
 }
 .Navbar_smallScreens {
+  /* border: 1px solid red; */
   margin: 1rem 4rem;
   height: 2.5rem;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr 9rem;
   justify-content: space-between;
 }
 .Navbar_mobile {
+  /* border: 1px solid red; */
   margin: 1rem 2rem;
   height: 2.5rem;
   display: grid;
-  grid-template-columns: 0.3fr 1fr 6rem;
+  grid-template-columns: 0.3fr 1fr 9rem;
   justify-content: space-between;
 }
 .Navbar_tablet {
@@ -31,6 +34,10 @@ nav {
   height: 100%;
   width: 2rem;
 }
+.meta_container {
+  height: 60%;
+  /* border: 1px solid red; */
+}
 .border {
   /* border: 1px solid red; */
 }
@@ -43,7 +50,7 @@ nav {
 }
 .connectWallet {
   font-size: 0.9rem;
-  height: 100%;
+  height: 70%;
   width: 100%;
   color: white;
   background-color: #a02279;
