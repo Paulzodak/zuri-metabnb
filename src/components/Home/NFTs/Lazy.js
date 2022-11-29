@@ -4,7 +4,14 @@ import stars from "../../../images/page 1/stars.svg";
 import { CloudinaryContext, Image } from "cloudinary-react";
 import { Suspense, lazy } from "react";
 import Skeleton from "./NftSkeleton";
-const Pictures = lazy((screen, item) => import("./Pictures"));
+import Pictures from "./Pictures.js";
+// const Pictures = lazy(({ item }) => {
+//   return (
+//     <CloudinaryContext cloudName="dxs8cpeae">
+//       <Image publicId={item.link} width="100%" />
+//     </CloudinaryContext>
+//   );
+// });
 const Lazy = ({ screen, item }) => {
   return (
     <div
